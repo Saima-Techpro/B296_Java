@@ -7,6 +7,7 @@ public class DoWhile01 {
                      ***** Syntax for 'while loop' *****
 
                 startingValue is declared outside the loop body
+
                 while(condition){
                    loop body => codes to be executed
 
