@@ -14,7 +14,7 @@ public class Arrays01 {
         // String s = "Hulya", "Natalia", "Ali"; We can't store multiple values in String
 
         String s1 = "";
-
+        
         // How to create an Array?
         // 1st way:
         String[] stdNames = new String[3];
