@@ -28,7 +28,7 @@ public class HW {
 
                 studentNames[i] = (inputNames.replaceAll("\\s++", " "));
             } else {
-                break;  // sentinel value
+                break;
             }
         }
         System.out.println(Arrays.toString(studentNames));  // [Tom, null]

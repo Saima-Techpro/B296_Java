@@ -9,15 +9,18 @@ public class HW {
         String[][] cities = { { "Istanbul", "Ankara", "Adana", "Izmir" }, { "Washington", "New York", "Chicago" },
                 { "London", "Chelsea", "Newcastle" }, { "Berlin", "Hamburg" } };
 
-        for (String[] i : cities) {
+        for (String[] innerArray : cities) {
 
-            for (String j : i) {
+            for (String cityName : innerArray) {
 
-                if (j.contains("a")) {
-                    System.out.println(j);
+                if (cityName.contains("a")) {
+                    System.out.println(cityName);
                 }
 
             }
         }
+
+
+
     }
 }

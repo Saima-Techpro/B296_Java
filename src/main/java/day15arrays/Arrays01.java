@@ -19,6 +19,8 @@ public class Arrays01 {
          5. Arrays use less memory because they have fix size structure
          6. Arrays can store both Primitive data type and object references as well (references of Non-Primitive data type
             such as Strings and Wrapper classes)
+         7. Arrays.toString() returns a string representation of the array, but the original numbers array
+            remains unchanged in terms of its type and content.
          */
 
         // Create an array of size 5 on int data type and print the sum of the first and the last integer
@@ -44,6 +46,10 @@ public class Arrays01 {
         // How tp print an Array?
         System.out.println("numbers = " + numbers);  // [I@a09ee92
         System.out.println(Arrays.toString(numbers));  // [7, 12, 41, 35, 88]
+        // Arrays.toString(numbers) returns a string representation of the array,
+        // but the original numbers array remains unchanged in terms of its type and content.
+        String arrayAsString = Arrays.toString(numbers); // Returns a string, but 'numbers' is still int[]
+        System.out.println(arrayAsString); // Prints: [7, 12, 41, 35, 88] as String data type
 
         // How to get the specific value from an array?
         int firstNum = numbers[0];
