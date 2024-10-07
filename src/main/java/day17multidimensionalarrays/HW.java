@@ -22,13 +22,41 @@ public class HW {
 
          */
 
+        // Example of a symmetric matrix
+        int[][] arr = {
+                {1, 2, 3},
+                {2, 4, 5},
+                {3, 5, 6}
+        };
+
+        int rows = arr.length;  // Number of rows
+        int cols = arr[0].length; // Number of columns
 
 
+        // Step 1: Check if the number of rows equal the number of columns (required for symmetry)
+        if (rows != cols) {
+            System.out.println("the number of rows are not equal to the number of columns");  // non- symmetric
+        }
 
+        // Step 2: Check symmetry by comparing elements
 
+        int counter = 0; // to count the number of pairs
 
+        for (int i = 0; i < rows; i++) {  // Iterate over rows
+            for (int j = 0; j < cols; j++) {  // Iterate over columns
+                // Check if element at (i, j) is equal to element at (j, i)
+                if (arr[i][j] != arr[j][i]) {
+                    counter++;  // If any pair doesn't match, array is not symmetric
+                }
+            }
 
+        }
 
+        if (counter == 0){
+            System.out.println("The array is symmetric!");
+        }else {
+            System.out.println("The array is not symmetric!");
+        }
 
     }
 }
