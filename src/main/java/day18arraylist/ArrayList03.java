@@ -34,6 +34,7 @@ public class ArrayList03 {
 
         ArrayList<String > cities = new ArrayList<>();
         cities.add("Dubai");
+        // cities.add("Zurich");  add this later to show the importance of index control through i--
         cities.add("London");
         cities.add("Baku");
         cities.add("Izmir");

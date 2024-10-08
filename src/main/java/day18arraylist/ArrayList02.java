@@ -55,5 +55,8 @@ public class ArrayList02 {
         System.out.println("myList updated even elements= " + myList); // [7, 7, 7, 7]
 
 
+
+
     }
+
 }
