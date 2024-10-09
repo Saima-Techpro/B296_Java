@@ -26,6 +26,13 @@ public class ArrayList03 {
 
         // HW
         // Solve the above using 'continue' keyword
+        for (Character w : a){
+            if(b.contains(w)){
+                continue;
+            }
+            b.add(w);
+        }
+        System.out.println("b with unique values = " + b);//[J, a, v]
 
 
 
