@@ -94,7 +94,62 @@ public class HW {
         }
         System.out.println("mostFrequent = " + mostFrequent);
 
+        // students' solutions:
+        // reversed arrayList with method call
+        ArrayList<String> planets = new ArrayList<>();
+        planets.add("Mercury");
+        planets.add("Venus");
+        planets.add("Earth");
+        planets.add("Mars");
+
+        System.out.println(planets); // [Mercury, Venus, Earth, Mars]
+
+        System.out.println("reversedArrayList(planets) = " + reversedArrayList(planets)); // reversedArrayList(planets) = [Mars, Earth, Venus, Mercury]
+
+
+        // most frequent element with method call
+        ArrayList<Integer> ratings = new ArrayList<>();
+
+        ratings.add(5);
+        ratings.add(3);
+        ratings.add(2);
+        ratings.add(5);
+        ratings.add(2);
+        ratings.add(5);
+
+        System.out.println("Most frequent rating is: " + mostFrequentElement(ratings));
     }
+
+    public static ArrayList<String> reversedArrayList(ArrayList<String> givenList) {
+
+        ArrayList<String> reversedList = new ArrayList<>();
+        for (int i = givenList.size() - 1; i >= 0; i--) {
+            reversedList.add(givenList.get(i));
+        }
+        return reversedList;
+
+    }
+
+    public static Integer mostFrequentElement(ArrayList<Integer> list){
+        int maxCounter = 0;
+        Integer mostFrequentValue = null;
+        for (int i = 0; i < list.size(); i++) {
+
+            int counter = 0;
+
+            for (int j = 0; j < list.size(); j++) {
+                if (list.get(i) == list.get(j)){
+                    counter = counter + 1;
+                }
+            } if (counter>maxCounter){
+                maxCounter = counter;
+                mostFrequentValue = list.get(i);
+            }
+        }
+        System.out.println(mostFrequentValue + " has been repeated " + maxCounter + " times");
+        return mostFrequentValue;
+    }
+
 
 
 }
