@@ -1,0 +1,34 @@
+  NOTES on POLYMORPHISM
+      - Polymorphism => poly means many , morphism means forms  => many forms
+      - Polymorphism is the 2nd characteristic of OOP concept
+      - Polymorphism is used to implement the methods in many ways
+      - Polymorphism consists of two parts:
+          1) Method Overloading (learned previously)
+          2) Method Overriding
+             In Method Overriding, child classes use the methods from parent class but implement
+             them after some modification.
+
+
+ In Method Overriding, child classes use the methods from parent class but implement
+             them after some modification.
+
+       Real life example:
+       BROWSERS => safari, chrome, edge, mozilla, opera, firefox etc.
+       All these types of browsers are actually child classes of Browser class.
+       Browser class has some common features like navigation(), version variable etc.
+       All browsers inherit these common features from the parent class and then
+       implement them for their specific needs after some modification.
+
+
+       ********* Rules for Method Overriding *********
+
+       1) Private methods cannot be overridden!
+       2) Access modifier of the method in child class can not be more
+            restrictive / narrower than the access modifier of the method in parent class
+       3) Final members in a class can not be overridden.
+         Bcs Final keyword is used to prevent any change on the variable or method or class.
+         So if we have final keyword, we have the latest version that we can ever assign
+      4) If a class is final, can not be inherited...
+      5) Static members cannot be overridden...Bcs static members are class property and are common for all the objects...
+      6) When we override a method which has a return type, we can declare the same data type in the child
+         class where we are overriding, or we can use any of its child classes as return data type as well.

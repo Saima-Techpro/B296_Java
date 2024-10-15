@@ -67,16 +67,20 @@ public class InstanceBlock02 {
 
         InstanceBlock02 obj2 = new InstanceBlock02(2022);
 
+        System.out.println("========== obj3 =============");
         InstanceBlock02 obj3 = new InstanceBlock02(2024);
+        //System.out.println(obj3.year);
 
         System.out.println("=======================");
 
         InstanceBlock02 obj4 = new InstanceBlock02(2024, 90000, "White", "Hybrid", "Nissan", "Patrol", true);
 
 
-        System.out.println(obj4.colour); // White
-        System.out.println(obj4.fuelType); // Hybrid
+//        System.out.println("===========obj4 parameterised============");
+//        System.out.println(obj4.colour); // White
+//        System.out.println(obj4.fuelType); // Hybrid
 
+        // instance block takes precedence over constructor information
 
     }
 
