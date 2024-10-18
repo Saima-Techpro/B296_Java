@@ -1,5 +1,7 @@
 package miniprojects.miniproject1_EmployeeManagementSystem;
 
+import day24oop_polymorphism.Cat;
+
 public class Runner {
     public static void main(String[] args) {
 
@@ -29,6 +31,9 @@ public class Runner {
         Manager manager = new Manager("Fatma", "87Abc12", 1500, 100, 200);
         System.out.println(manager.getDetails());
 
+        // Contract Employee
+        ContractEmployee contractEmployee = new ContractEmployee("Eva Smith", "caw001", 300, 12);
+        System.out.println(contractEmployee.getDetails());
 
 
     }

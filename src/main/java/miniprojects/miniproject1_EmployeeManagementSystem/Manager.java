@@ -6,6 +6,7 @@ public class Manager extends FullTimeEmployee{
     Managers: Inherit from Full-Time Employees, with additional managerial perks.
     Managerial Bonus: Managers receive an additional 10% bonus on top of their full-time salary.
 
+    Multi-level Inheritance
     name, id, salary =>  common properties from super class (parent class)
     specific properties required for Manager .... none because they're already present in super class FullTimeEmployee
 
