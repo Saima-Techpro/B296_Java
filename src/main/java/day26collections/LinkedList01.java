@@ -96,13 +96,22 @@ public class LinkedList01 {
         System.out.println("myList = " + myList);  // [Veli]
         /*
 
-        These two methods are available in Deque interface now. Not in List interface anymore.
+        These two methods are available in Deque interface. Not in List interface anymore.
         myList.removeFirstOccurence();
         myList.removeLastOccurence();
 
         OR
         These two method can be used if you're creating list using concrete class
         like this =>  LinkedList<String> nameList = new LinkedList<>();
+
+        If we declare  list as LinkedList<String> nameList = new LinkedList<>();,
+        it will have access to both the removeFirstOccurrence() and removeLastOccurrence() methods.
+        This is because the LinkedList class implements both the Deque and List interfaces,
+         which means it includes the methods from both these interfaces.
+
+        removeFirstOccurrence(Object o) is part of the Deque interface.
+        removeLastOccurrence(Object o) is also part of the Deque interface.
+        remove(Object o) is part of the List interface.
 
          */
 
@@ -166,13 +175,11 @@ public class LinkedList01 {
         names1.add("Natalia");
         System.out.println("names1 = " + names1);  // [Anna, Fatma, Natalia, Natalia, Ali, Natalia, Natalia]
 
-
         for (int i = 0; i < names1.size(); i++) {
             if (names1.get(i).length() > 4 ){
                 names1.remove(i);
                 i--;
             }
-
         }
         System.out.println("names1 = " + names1);
 
