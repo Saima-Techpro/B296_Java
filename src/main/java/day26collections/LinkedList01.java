@@ -184,5 +184,8 @@ public class LinkedList01 {
         System.out.println("names1 = " + names1);
 
 
+
+        // options / alt + highlight all names1 to modify or refactor all at once
+
     }
 }
