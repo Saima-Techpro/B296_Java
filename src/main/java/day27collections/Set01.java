@@ -9,6 +9,7 @@ public class Set01 {
 
         /*
         Sets are used to store UNIQUE data.
+        For example: national ID, email, fingerprints, driver licence, car plate number etc.
         There are 3 types of sets:
         1. HashSet
         2. LinkedHashSet
