@@ -41,7 +41,7 @@ public class E05 {
     }
 
 
-    public static void getCharFromString(String s , int a, int b){
+    public static void getCharFromString(String s , int a, int b) {
         try {
             int idx = a / b;
             char ch = s.charAt(idx);

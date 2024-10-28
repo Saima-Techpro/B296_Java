@@ -15,6 +15,7 @@ public class E04 {
         try {
             String element = s[idx];
             System.out.println("element = " + element);
+
         } catch (ArrayIndexOutOfBoundsException e){
             System.out.println("Index can't be greater than the length of array which is " + (s.length-1));
         }
