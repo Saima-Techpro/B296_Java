@@ -5,11 +5,13 @@ public class Employee {
     private final String employeeName;
     private final int employeeNumber;
 
+    // Constructor
     public Employee(String employeeName, int employeeNumber) {
         this.employeeName = employeeName;
         this.employeeNumber = employeeNumber;
     }
 
+    // Getters
     public String getEmployeeName() {
         return employeeName;
     }
@@ -20,6 +22,7 @@ public class Employee {
 
 
 
+    // toString() is used to print
     @Override
     public String toString() {
         return "Employee{" +
