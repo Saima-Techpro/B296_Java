@@ -104,6 +104,9 @@ public class Lambda03 {
         // we can use it directly with our list
         list.removeIf(t-> t.length() >7);
         System.out.println(list);
+
+        //removeIf() removes the elements if the condition inside is true
+
     }
 
 }

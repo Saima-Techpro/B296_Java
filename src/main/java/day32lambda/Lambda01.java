@@ -60,7 +60,8 @@ public class Lambda01 {
                     stream().
                     distinct(). // [11, 2, 24, 5, 13]
                     sorted(). // sort the elements from small to big => [2, 5, 11, 13, 24]
-                    reduce((t,u) ->  u).get();
+                    reduce((t,u) ->  u).
+                    get();
 
         System.out.println("max = " + max);
     }
