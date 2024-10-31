@@ -21,6 +21,10 @@ public class Utils {
     }
 
 
+    // This method is going to check if the given number is even or not
+    public static boolean isNumEven(int num){
+        return num%2 == 0;
+    }
 
 
 
